@@ -25,9 +25,11 @@ def load_data(filename):
     X = z[:, 1:]
     return X, y
 
+
 def split_data(x, y, tr_fraction=0.5):
 
-        """Split data to create a random tr-ts partition."""
+        """Split data to create a random tr-ts partition.
+        test"""
         n, d = x.shape
 
         # check if y and x have a consistent no. of samples and labels
